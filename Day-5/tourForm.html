@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Booking Form</title>
+    <link rel="stylesheet" href="tourForm.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://img.freepik.com/free-vector/detailed-travel-logo-theme_23-2148630535.jpg?ga=GA1.1.1379763685.1721277755&semt=ais_hybrid&w=740"
+        alt="Logo"
+      />
+      <p>IPSUM TRAVEL</p>
+    </header>
+    <!-- main content section -->
+    <main>
+      <h1>Tour Booking Form</h1>
+      <h2>Favourite Destinations</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        reiciendis, aperiam vero harum consectetur neque!
+      </p>
+      <div class="media">
+          <video src="" controls  poster="assets/thumb1.jpeg" ></video>
+          <video src="" controls  poster="assets/thumb2.jpeg"></video>
+          <video src="" controls  poster="assets/thumb3.jpeg"></video>
+      </div>
+    </main>
+
+    <section class="tour-form">
+      <h2>Book Your Tour Now</h2>
+      <p>Fill out the form below to book your tour.</p>
+      <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" />
+        <br />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Email" />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="phone"
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+        />
+        <br />
+        <label for="tour_date">When you are planning for tour?</label><br />
+        <input
+          type="date"
+          id="tour_date"
+          name="tour_date"
+          placeholder="Tour Date"
+        />
+        <br />
+        <label for="tour_location">Place you want to visit:</label><br />
+        <select name="tour_location" id="tour_location">
+          <option value="" selected>Select Destination</option>
+          <option value="Illam">Illam</option>
+          <option value="Kathmandu">Kathmandu</option>
+          <option value="Pokhara">Pokhara</option>
+          <option value="Chitwan">Chitwan</option>
+          <option value="Lumbini">Lumbini</option>
+        </select>
+        <br />
+        <label for="travellers">Number of travellers:</label>
+        <input
+          type="number"
+          id="travellers"
+          name="travellers"
+          placeholder="Number of Travellers"
+          min="1"
+        />
+        <br />
+        <p>Accomodation Preference:</p>
+        <label for="budget">Budget</label>
+        <input type="radio" id="budget" value="budget" name="budget" />
+        <label for="midrange">Midrange</label>
+        <input type="radio" id="midrange" value="midrange" name="budget" />
+        <label for="luxury">Luxury</label>
+        <input type="radio" id="luxury" value="luxury" name="budget" />
+        <br />
+        <label for="comments">Any special Request or Notes:</label>
+        <textarea name="comments" id="comments" row="4" cols="40"></textarea>
+        <br /><br />
+      </form>
+      <input type="submit" value="Book Tour Now" />
+    </section>
+
+    <footer>
+      <p>&copy; 2025 IPSUM TRAVEL. All rights reserved.</p>
+      <p>Contact us:00990000000</p>
+    </footer>
+  </body>
+</html>
