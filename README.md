@@ -1,4 +1,4 @@
-# MERN-Hands-on 🚀
+# MERN-HandsOn 🚀
 
 Welcome to **MERN-Hands-on**, my personal repository for exploring and mastering the **MERN (MongoDB, Express.js, React, Node.js) stack**. This repo contains all my code, projects, and experiments while learning **MERN development**.
 
