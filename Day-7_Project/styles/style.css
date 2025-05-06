@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.loginWrapper{
+    /* background-color: #ffc9c9; */
+    background-color:#f2f4f7;
+    padding: 72px  0 112px;
+    height: 100vh;
+    width: 100vw;
+}
+.loginContainer{
+    /* background-color: #b2f2bb; */
+    padding: 20px 0;
+    margin: 0 52px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+}
+.loginBoxLeft{
+    /* background-color: blue; */
+    padding: 0 32px 0 0;
+}
+.loginBoxLeft img{
+    /* background-color: purple; */
+    width: 240px;
+    height: 100px;
+    padding: 112px 0 16px;
+    margin-left: 0;
+}
+.loginBoxLeft h1{
+    /* background-color:orange; */
+    color: black;
+    padding: 0 0 20px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+.loginBoxRight{
+    /* background-color: red; */
+    height: 456px;
+    width: 396px;
+    display: block;
+}
+
+.loginForm{
+    background-color: #ffffff;
+    margin: 40px 0 0;
+    /* padding: 10px 0 24px; */
+    padding: 20px 0 28px;
+    border: none;
+    border-radius: 8px;
+    gap: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.1),
+    0px 8px 16px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.loginForm input{
+    /* background-color: green; */
+    background-color: #fff;
+    color: #1c1e21;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 14px 16px;
+    height: 22px;
+    line-height: 16px;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    /* Added outline: none to prevent browser default focus styles. */
+}
+
+.loginForm input:focus {
+    border: 1px solid #1877f2; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2); /*Optional: subtle blue glow*/
+}
+
+#loginButton{
+padding: 6px 16px 0;
+background-color: #0866ff;
+border: none;
+border-radius: 6px;
+font-size: 20px;
+font-family: inherit;
+font-weight: bold;
+color: #ffffff;
+line-height: 48px;
+width: 362px;
+text-align: center;
+cursor: pointer;
+}
+.loginForm a{
+    text-decoration: none;
+    margin: 16px 0 0;
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    width: 80%;
+
+}
+#createButton{
+    background-color: #42b72a;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 6px 16px;
+    text-align: center;
+    cursor: pointer;
+}
+p{
+    margin: 28px 0 0;
+    text-align: center;
+
+}
+p a{
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1c1e21;
+    cursor: pointer;
+}
+  
