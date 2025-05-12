@@ -1,0 +1,219 @@
+/* ***** Home Section Start ***** */
+
+.homeMainSection{
+    /* background-color: red; */
+    background-image: url("../assets/images/homeMainBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 100px;
+   
+}
+
+.homeMainSectionContentBox{
+    /* background-color: red; */
+    width: 90%;
+    height: fit-content;
+    margin-left: 120px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 35px;
+   
+}
+
+/* curriculum Button */
+a{
+    text-decoration: none;
+}
+.curriculumButtonWrapper{
+    border: 2px solid #424057;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 20px;
+}
+#curriculumButton{
+    background-color: #15803D;
+    color: var(--primaryTextColor);
+    padding: 2px 4px;
+    border-radius: 12px;
+    width:50px;
+    height: 25px;
+    border: none;
+}
+#curriculumButtonDescription{
+    /* background-color: blue; */
+    padding: 0 4px;
+    color: var(--primaryTextColor);
+    letter-spacing: 1.001px;
+}
+
+/* main section content */
+.homeMainTitle{
+    /* background-color: blue; */
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+}
+.homeMainTitleDescription{
+    /* background-color: red; */
+    color:#E5E7EB ;
+    padding: 15px 0;
+    line-height: 1.9;
+}
+
+/* get enroll button */
+.mainButtonBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.getEnrollButtonWrapper {
+    gap: 15px;
+    border: 3px solid #343742;
+    border-radius: 20px;
+    padding: 4px;
+    width: fit-content;
+}
+#getEnrollButton{
+    background-color: #954AD7;
+    border: 2px solid #974DD7;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    height: 50px;
+    border-radius: 16px;
+}
+#challengesCompleted{
+    color: var(--secondaryTextColor);
+    font-size: 10px;
+}
+
+/*  home company section  */
+.homeCompanySection{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap:50px;
+
+}
+#companySectionIntro{
+    /* background-color: red; */
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.01px;
+}
+.companyLogoWrapper{
+    /* background-color: purple; */
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+/* ***** Home section Ends here ***** */
+
+
+/* ***** Home Slide Section Starts ***** */
+.homeSlideSection{
+    /* background-color: orange; */
+    background-image: url("../assets/images/homeSlideBg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial; /*default*/
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 160px;
+    gap: 50px;
+}
+
+.homeSlideSectionTitle{
+/* background-color: blue; */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+#slideSectionTitle{
+    /* background-color: red; */
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--primaryTextColor);
+}
+#slideSectionDetails{
+/* background-color: purple; */
+color: var(--secondaryTextColor);
+text-align: center;
+}
+
+/* slidebox */
+.slideBox{
+    /* background-color: green; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+   margin:0 auto; /* margin:auto center's div horizently*/
+    
+}
+.slideImage{
+    /* background-color: yellow; */
+    margin: 0 50px 0;
+    flex: 6; /* 6out of 12*/
+    display: flex;
+    justify-content: start;
+}
+.slideImage img{
+    /* border: 2px solid red; */
+    border-radius:10px;
+    width: 80%;
+}
+.slideContentBox{
+    /* background-color: skyblue; */
+    margin: 0 50px 0;
+    flex: 6; /* 6 out of 12*/
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#slideContentBoxIntro{
+    /* background-color: red; */
+    color: var(--primaryTextColor);
+    font-size: 40px;
+    font-weight: 500;
+
+}
+#slideContentBoxDescription{
+    /* background-color: purple; */
+    color: var(--secondaryTextColor);
+    font-size: 16px;
+    letter-spacing: 1.1px;
+}
+
+/* to switch content and image */
+.reverse{
+    flex-direction: row-reverse;
+}
+
+/* to change image position from  */
+.reverse .slideImage{
+    justify-content: end;
+}
+
+
+/* ***** Home Slide Section Ends ****** */

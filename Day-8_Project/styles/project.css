@@ -1,0 +1,253 @@
+
+/*  **** Hero Section Starts Here**** */
+#heroSection{
+    background-image: url("../assets/images/heroImage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.heroSectionContentBox{
+    /* background-color: red; */
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+}
+
+#heroSectionHeading{
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 5px;  
+  font-weight: 500;
+}
+#heroSectionDescription{
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: --var(--secondaryTextColor);
+    font-weight: 200;
+}
+#heroSectionButton{
+    background-color: #954AD7;
+    border: 2px solid #974DD7;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    height: 50px;
+    border-radius: 16px;
+}
+#heroSectionButtonWrapper{
+    /* background-color: red; */
+    border: 3px solid #343742;
+    border-radius: 20px;
+    padding: 4px;
+
+}
+/* *****Hero Section Ends Here***** */
+
+/* *****Project Slider Section Start***** */
+
+.sliderCardSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sliderCard{
+    /* background-color: blue; */
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid #2f3a4f;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.sliderCardImageBox{
+height:200px ;
+width: 100%;
+/* background-color: blue; */
+}
+
+.sliderCardImageBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7.5px;
+    
+}
+.sliderCardDetailBox{
+    /* background-color: green;  */
+    display: flex; 
+    flex-direction: column;
+}
+
+
+/* experience box */
+.sliderCardExperienceBox{
+/* background-color: #fff; */
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.sliderExperienceTitle{
+    color: #9ca3afcc;
+    font-size: 14px;
+
+}
+/* rangebox */
+.rangeBoxWrapper{
+    /* border:2px solid purple; */
+    width: 100px;
+    height:20px;
+    display: flex;
+    gap: 4px;
+}
+.rangeBoxItem{
+/* background-color: green; */
+background-color: #2f3a4f;
+height: 5px;
+width: 20px;
+}
+.rangeBoxFilled{
+    background-color: #9448d6;
+}
+.firstRangeBox{
+    /* top-left top-right bottom-right bottom-left */
+  border-radius: 10px 0 0 10px;  
+}
+.lastRangeBox{
+    /* top-left top-right bottom-right bottom-left */
+    border-radius: 0 10px 10px 0;
+}
+
+/* slider Card Description Box */
+
+.sliderCardDescriptionBox{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sliderCardTitle{
+    /* color: red; */
+    color: #d1d5dbcc;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.sliderCardDescription{
+color: #9ca3afcc;
+font-size: 14px;
+line-height: 20px;
+}
+/* *****Project Slider Section Ends Here***** */
+
+/* *****Project Showcase Section Starts Here***** */
+
+    .projectShowcaseSection{
+        /* background-color: blue; */
+        max-width:1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 0 auto; /* margin auto centers the sec-horizently*/
+    }
+
+    /* Project showcase Intro */
+    .projectShowcaseIntro{
+        /* background-color: red; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .projectShowcaseIntroHeading{
+        font-size: 40px;
+        color: var(--primaryTextColor);
+        text-align: center;
+        font-weight: 500;
+    }
+    .projectShowcaseIntroDescription{
+        font-size: 14px;
+        text-align: center;
+        color: var(--secondaryTextColor);
+        line-height: 28px;
+        letter-spacing: 1.001px;
+        font-weight: 300;
+    }
+
+    /* project showcase Items */
+
+    .projectItemWrapper{
+        /* background-color: purple; */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .projectItem{
+        /* background-color: red; */
+        display: flex;
+    }
+    /* project item content */
+    .projectItemContent{
+        /* background-color:green; */
+        flex: 6; /* 6 out of 12*/
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projectItemLevel{
+        font-size: 14px;
+        color: var(--secondaryTextColor);
+        font-weight: 300;
+        letter-spacing: 1.001px;
+    }
+    .projectItemTitle{
+        /* background-color: brown; */
+        color: var(--primaryTextColor);
+        font-weight: 500;
+        letter-spacing: 1.001px;
+    }
+    .projectItemDescription{
+        /* background-color: orange; */
+        color: var(--secondaryTextColor);
+        font-size: 16px;
+    }
+
+    /* project item Image */
+    .projectItemImage{
+        /* background-color: blue; */
+        flex: 6; /* 6 out of 12*/
+        display: flex;
+        justify-content: end;
+        
+    }
+    .projectItemImage img{
+        width: 80%;
+        border-radius: 10px;
+    }
+    
+    /* reverse Project Item and Project Image */
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    /* for project Item Image inside reverse */
+    .reverse .projectItemImage{
+        justify-content: start;
+    }
+
+/* *****Projects Showcase Section Ends Here**** */

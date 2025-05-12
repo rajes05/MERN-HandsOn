@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Honk&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Univrsal selector */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* root variables */
+
+:root{
+    --primaryBGColor: #020617;
+    --primaryTextColor: #e5e7eb;
+    --secondaryTextColor: #9CA3AF;
+
+}
+body{
+    background-color: var(--primaryBGColor);
+    color: var(--primaryTextColor);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.navbar{
+    /* background-color: blue; */
+    width: 100%;
+    display:flex;
+   justify-content: space-between; 
+    align-items: center;
+    height: 70px;
+    padding:0 20px;
+    position: fixed;
+    background-color:#02061747;
+
+
+}
+.navMiddleBox{
+    display: flex;
+    gap: 30px;
+}
+.navMiddleBox li {
+    text-decoration: none;
+    font-style: none;
+    font-size: 14px;
+    list-style: none;
+    color: var(--primaryTextColor);
+    letter-spacing: 1.1px;
+
+}
+.navMiddleBox li a{
+    text-decoration: none;
+    color: var(--primaryTextColor);
+
+}
+button{
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 15px;
+    border : 2px solid #363651;
+    background-color: transparent;
+    color: var(--primaryTextColor);
+    cursor: pointer;
+}
+#navSigninButton{
+    font-weight: 600;
+    background-color: #1B1F39;
+
+}
+button:hover{
+    outline-color: #1e293b;
+    background-color: red;
+}
+
+
+/* css gradient */
+.cssGradient{
+    background: linear-gradient(to bottom right,#a855f7,#f472b6,#fde047);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
