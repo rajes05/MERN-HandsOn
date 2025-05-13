@@ -1,3 +1,5 @@
+// ******** function : block of code that perform specific tasks.
+
 // function to add two numbers
 
 
