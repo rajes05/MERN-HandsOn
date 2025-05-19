@@ -1,0 +1,118 @@
+----------GitHub Commands ----------------------
+
+
+
+git init // initialize git files
+git add . // add files
+git commit -m " " // save changes with messages describe about what was change
+
+---------------------
+git remote add origin <URL>
+git remote -v // show existing origin
+git remote remove origin //to remove origin
+---------------------
+git push 
+git push origin main
+
+****************************************************************
+
+✅ Step-by-Step: Add a Folder to GitHub Repository
+
+git status
+git add <folder-name>
+git commit -m "Added <folder-name> with new files"
+git push origin main
+
+
+
+****************************************************************
+
+<---------------- Git Branch---------------------------------->
+git branch /* to check  active branch */
+git branch <branch name> /* to create  new branch */ 
+git checkout <branch name>  /* to switch from one branch to another*/
+git push origin <branch name>  /* to push code on own branch */
+
+****************************************************************
+
+< --------------- Delete File ------------------------------- >
+
+git rm filename.txt
+git commit -m "Deleted filename.txt"
+git push origin main
+
+//if you accidently delete a file, you can recover using git checkout
+git checkout HEAD -- filename.txt
+
+//if you want to untrack a file but keep it on your system
+git rm --cached filename.txt
+
+***************************************************************
+
+// If you made README.md file in GitHub already so have to pull first 
+//- If you need to fetch updates before pushing:
+
+git pull origin main --allow-unrelated-histories
+
+****************************************************************
+
+//to reset 
+git log
+git reset -- hard commit_id
+
+
+rm -rf .git // is used to forcefully remove the .git directory from a repository.
+
+git clone <URL> // to clone 
+
+
+
+// Merge
+git merge <branch name to merge>
+
+************************************************************************************
+
+/ /
+It sounds like you're encountering unrelated histories every time you try to push your code, forcing you to run git pull origin main --allow-unrelated-histories before pushing. This usually happens when:
+- Your local repository and remote repository have different histories—perhaps due to an initial commit mismatch.
+- You cloned a repository with existing commits, but your local branch was created separately.
+- There's a history divergence caused by commits made directly to the remote branch.
+Suggested Solution
+Instead of running --allow-unrelated-histories every time, you can synchronize your local repository with the remote repository's history properly. Try these steps:
+
+1️⃣ Check Your Remote Branch
+Run:
+>git remote -v
+
+
+Ensure you’re pushing to the correct remote repository.
+2️⃣ Fetch the Latest Remote Changes
+>git fetch origin
+
+
+This downloads changes without merging them.
+3️⃣ Merge Remote Changes (if needed)
+>git merge origin/main
+
+
+This merges updates into your local branch properly.
+4️⃣ Set Upstream Properly
+If you haven’t set up tracking for your branch, do:
+>git branch --set-upstream-to=origin/main
+
+
+or use:
+>git push -u origin main
+
+
+This ensures Git recognizes the correct upstream branch and avoids unrelated history issues.
+5️⃣ Rebase Instead of Allowing Unrelated Histories
+If history is causing conflicts, rebasing might help:
+>git rebase origin/main
+
+
+This rearranges commits to align with the remote history.
+Final Thoughts
+Try these steps and let me know if the issue persists! Since you’re actively diving into Git workflows, this could be a great learning opportunity to understand how histories diverge in repositories. 🚀
+
+
